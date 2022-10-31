@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&family=Big+Shoulders+Display:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca:wght@200;400&family=Montserrat:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,10 +12,12 @@ body{
   justify-content: center;
   grid-template-columns: auto auto auto auto;
   gap: 20px;
-  height: 700px;
+  height: 43.47rem;
   align-content: center;
-  padding: 80px;
-  margin: 60px;
+  padding: 20px;
+  margin: 10px;
+  font-size: 0.8125rem;
+  font-family: 'barlow semi condensed'
   }
   .grid-container > div{
     align-content: center;
@@ -24,35 +27,44 @@ body{
     grid-column: 1 / span 2;
     grid-row: 1;
     background-color: hsl(263, 55%, 52%);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 1em 1em 1em 1em white;
+    border-radius: 0.625rem;
+    height: 18.75rem;
+    width: 31.25rem;
+    padding: 1.25rem;
   }
   .item2{
     grid-column: 3;
     grid-row: 1 /span 0;
     background-color: hsl(217, 19%, 35%);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.625rem;
+    width: 15.625rem;
+    height: 18.75rem;
+    padding: 1.875rem;
   }
   .item5{
     grid-column: 4;
     grid-row: 1 / span 2;
     background-color:hsl(0, 0%, 100%);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.625rem;
+    width: 15.625rem;
+    height: 38.75rem;
+    padding: 1.25rem;
   }
   .item3{
     background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    height: 18.75rem;
+    width: 15.625rem;
   }
   .item4{
     grid-column: 2 / span 2;
     grid-row: 2 ;
     background-color: hsl(219, 29%, 14%);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.625rem;
+    height: 18.75rem;
+    width: 31.25rem;
+    padding: 1.25rem;
   }
 .verified{
   color: hsla(210, 46%, 95%,50%);
@@ -62,9 +74,11 @@ color: hsl(0, 0%, 81%);
 }
 .review{
   color:hsl(210, 46%, 95%); 
+  padding: 0.3125rem;
 }
 .advise{
   color: hsla(210, 46%, 95%, 70%);
+  padding: 0.3125rem;
 }
 .name1{
      color: hsl(210, 46%, 95%);
@@ -75,16 +89,48 @@ color: hsl(0, 0%, 81%);
      display: block;
 }
 .review1{
-      color: hsl(210, 46%, 95%, 70%);
+    padding: 0.3125rem;
 }
 .advise1{
-
-       
+       padding: 0.3125rem;
 }
 
 .align{
   display: inline-flex;
+  padding: 0.625rem;
 }
 .nv{
-  padding-left: 15px;
+  padding-left: 0.9375rem;
+}
+@media (max-width: 500px){
+  .grid-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    height: 200.5rem;
+    width: 100vw;
+    margin: auto;
+    text-align: left;
+    }
+    .item1{
+      width: 14.375rem;
+      height: 45rem;
+    }
+    .item4{
+      width: 14.375rem;
+      height: 40.75rem;
+    }
+    .item2{
+      width: 14.375rem;
+      height: 25rem;
+    }
+    .item3{
+      width: 14.375rem;
+      height: 20rem;
+    }
+    .item5{
+      width: 14.375rem;
+      height: 45rem;
+    }
 }
